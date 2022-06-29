@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styled from "styled-components";
-import Button from "./Button";
+import Button from "./Button.js";
 
-export default function HistoryDB({ gameName, players }) {
+export default function History({ nameOfGame, players }) {
   return (
     <Wrapper>
-      <GameTitle>{gameName}</GameTitle>
+      <GameTitle>{nameOfGame}</GameTitle>
       {players.map(({ name, score, id }) => (
         <Player key={id}>
           <span>{name}</span>
@@ -15,12 +15,13 @@ export default function HistoryDB({ gameName, players }) {
     </Wrapper>
   );
 }
+
 const Wrapper = styled.section`
   display: grid;
-  gap: 8px;
-  border: 1px solid blue;
-  padding: 6px;
-  border-radius: 5px;
+  gap: 10px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 8px;
 `;
 
 const Player = styled.div`

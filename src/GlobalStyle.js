@@ -1,18 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-body {
-  margin: 0 auto;
-  max-width: 600px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+input,
+button {
+  font-size: inherit;
+  padding: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
 }
 `;
