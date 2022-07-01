@@ -25,5 +25,5 @@ export default function Input({
 }
 
 const InputStyled = styled.input`
-  border: 2px solid #bbb;
+  border: 3px solid #bbb;
 `;

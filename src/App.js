@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <AppLayout>
-      <h1>Scorekeeper</h1>
+      <h1>The Earl of Coding</h1>
       {currentPage === PAGES.PLAY && <GameForm onCreateGame={createGame} />}
 
       {currentPage === PAGES.GAME && (

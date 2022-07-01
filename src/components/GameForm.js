@@ -22,21 +22,21 @@ export default function GameForm({ onCreateGame }) {
       <h2 id="formHeader">Create a new game</h2>
       <Input
         name="nameOfGame"
-        labelText="Name of game"
-        placeholder="e.g. Dodelido"
+        labelText="GameName"
+        placeholder="e.g. Bierpong"
         onChange={handleChange}
         value={formData.nameOfGame}
         required
       />
       <Input
         name="playerNames"
-        labelText="Player names, seperated by comma"
-        placeholder="e.g. John Doe, Jane Doe"
+        labelText="Player seperated by Commas"
+        placeholder="e.g. Luca, Lee, Vincent"
         onChange={handleChange}
         value={formData.playerNames}
         required
       />
-      <Button disabled={disabled}>Create game</Button>
+      <Button disabled={disabled}>Create the game</Button>
     </Form>
   );
 

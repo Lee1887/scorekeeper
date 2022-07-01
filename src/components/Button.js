@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export default styled.button`
-  background-color: ${(props) => (props.isActive ? "#333" : "lightgray")};
+  background-color: ${(props) => (props.isActive ? "#00FFFFF" : "lightgray")};
   ${(props) => props.isActive && "color: white"}
-  border: 1px solid black;
+  border: 4px solid limegreen;
   width: 100%;
 `;

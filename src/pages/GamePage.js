@@ -24,8 +24,8 @@ export default function GamePage({
           onDecreasePlayerScore={() => onDecreasePlayerScore(index)}
         />
       ))}
-      <Button onClick={onResetScores}>Reset scores</Button>
-      <Button onClick={onEndGame}>End game</Button>
+      <Button onClick={onResetScores}>Reset the scores</Button>
+      <Button onClick={onEndGame}>End the game</Button>
     </>
   );
 }

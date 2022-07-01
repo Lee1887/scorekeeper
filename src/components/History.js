@@ -18,10 +18,10 @@ export default function History({ nameOfGame, players }) {
 
 const Wrapper = styled.section`
   display: grid;
-  gap: 10px;
+  gap: 7px;
   border: 1px solid grey;
-  border-radius: 4px;
-  padding: 8px;
+  border-radius: 6px;
+  padding: 9px;
 `;
 
 const Player = styled.div`
