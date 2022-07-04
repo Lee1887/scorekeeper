@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "./Button.js";
 
 export default function History({ nameOfGame, players }) {
+  // const [hidden, setHidden] = useState(true);
   return (
     <Wrapper>
       <GameTitle>{nameOfGame}</GameTitle>
@@ -12,6 +13,10 @@ export default function History({ nameOfGame, players }) {
           <span>{score}</span>
         </Player>
       ))}
+      {/* //<div>
+        //{!hidden ? <p>Hide</p> : null}
+        /* <button onClick={() => setHidden((s) => !s)}></button> 
+      </div> */}
     </Wrapper>
   );
 }

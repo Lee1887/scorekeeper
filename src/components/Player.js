@@ -37,7 +37,7 @@ const PlayerWrapper = styled.section`
   justify-content: space-between;
 `;
 const PlayerScore = styled.div`
-  color: ${(props) => props.color || "black"};
+  color: ${(props) => props.color || "red"};
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
